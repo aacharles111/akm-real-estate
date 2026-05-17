@@ -1,7 +1,6 @@
 "use client";
 
-import { useEffect, useRef } from "react";
-import { gsap } from "gsap";
+import { useRef } from "react";
 
 const reviews = [
   {
@@ -59,10 +58,9 @@ const ReviewCard = ({
 }: {
   review: (typeof reviews)[number];
 }) => (
-  <div className="flex-shrink-0 w-[350px] md:w-[400px] mx-4">
-    <div className="bg-white rounded-2xl shadow-lg border border-green-50 p-6 h-full hover:shadow-xl transition-shadow duration-300">
-      {/* Stars */}
-      <div className="flex gap-1 mb-4">
+  <div className="flex-shrink-0 w-[340px] md:w-[380px] mx-3">
+    <div className="bg-white rounded-2xl shadow-md border border-green-50 p-6 h-full hover:shadow-xl transition-shadow duration-300">
+      <div className="flex gap-1 mb-3">
         {Array.from({ length: review.rating }).map((_, i) => (
           <svg
             key={i}
@@ -74,14 +72,12 @@ const ReviewCard = ({
           </svg>
         ))}
       </div>
-
-      <p className="text-gray-700 leading-relaxed mb-4 italic">
+      <p className="text-gray-700 leading-relaxed mb-4 text-sm md:text-base italic">
         &ldquo;{review.text}&rdquo;
       </p>
-
-      <div className="border-t border-gray-100 pt-4">
-        <p className="font-semibold text-gray-900">{review.name}</p>
-        <p className="text-sm text-gray-500">{review.location}</p>
+      <div className="border-t border-gray-100 pt-3">
+        <p className="font-semibold text-gray-900 text-sm">{review.name}</p>
+        <p className="text-xs text-gray-500">{review.location}</p>
       </div>
     </div>
   </div>
@@ -90,70 +86,11 @@ const ReviewCard = ({
 export default function ReviewsSection() {
   const trackRef = useRef<HTMLDivElement>(null);
 
-  useEffect(() => {
-    const track = trackRef.current;
-    if (!track) return;
-
-    // Duplicate the cards for seamless infinite loop
-    const cards = track.children;
-    const cardWidth = cards[0]?.getBoundingClientRect().width || 400;
-    // We need enough cards duplicated to fill the viewport
-    const cloneCount = Math.ceil(window.innerWidth / cardWidth) + 2;
-
-    for (let i = 0; i < cloneCount; i++) {
-      for (let j = 0; j < cards.length; j++) {
-        const clone = cards[j].cloneNode(true) as HTMLElement;
-        track.appendChild(clone);
-      }
-    }
-
-    // GSAP infinite horizontal scroll
-    const mm = gsap.matchMedia();
-    mm.add("(prefers-reduced-motion: no-preference)", () => {
-      const totalWidth = track.scrollWidth / 2;
-      const speed = 80; // pixels per second — slow and smooth
-
-      gsap.to(track, {
-        x: -totalWidth,
-        duration: totalWidth / speed,
-        ease: "none",
-        repeat: -1,
-        onRepeat: () => {
-          gsap.set(track, { x: 0 });
-        },
-      });
-    });
-
-    // Pause on hover
-    const pauseAnim = () => {
-      const anim = gsap.getTweensOf(track);
-      anim.forEach((t) => t.pause());
-    };
-    const resumeAnim = () => {
-      const anim = gsap.getTweensOf(track);
-      anim.forEach((t) => {
-        if (t.paused()) t.play();
-      });
-    };
-
-    const container = track.parentElement;
-    if (container) {
-      container.addEventListener("mouseenter", pauseAnim);
-      container.addEventListener("mouseleave", resumeAnim);
-    }
-
-    return () => {
-      mm.revert();
-      const anim = gsap.getTweensOf(track);
-      anim.forEach((t) => t.kill());
-    };
-  }, []);
-
-  // Need more reviews for a smooth loop — double the array
-  const allReviews = [...reviews, ...reviews];
-
   return (
-    <section id="reviews" className="py-20 md:py-28 bg-gradient-to-b from-white to-green-50 overflow-hidden">
+    <section
+      id="reviews"
+      className="py-20 md:py-28 bg-gradient-to-b from-white to-green-50 overflow-hidden"
+    >
       <div className="max-w-7xl mx-auto px-6 mb-12">
         <div className="text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
@@ -166,15 +103,44 @@ export default function ReviewsSection() {
         </div>
       </div>
 
-      {/* Scrolling Track */}
-      <div className="relative overflow-hidden">
-        <div
-          ref={trackRef}
-          className="flex"
-          style={{ width: "max-content" }}
-        >
-          {allReviews.map((review, i) => (
-            <ReviewCard key={i} review={review} />
+      {/* Scrolling Track Container */}
+      <div className="relative group">
+        <style>
+          {`
+            @keyframes scrollReviews {
+              0% { transform: translateX(0); }
+              100% { transform: translateX(-50%); }
+            }
+            .reviews-scroll {
+              animation: scrollReviews 60s linear infinite;
+            }
+            .reviews-scroll:hover {
+              animation-play-state: paused;
+            }
+            @media (prefers-reduced-motion: reduce) {
+              .reviews-scroll {
+                animation: none;
+              }
+            }
+          `}
+        </style>
+
+        <div ref={trackRef} className="flex reviews-scroll" style={{ width: "max-content" }}>
+          {/* First set */}
+          {reviews.map((review, i) => (
+            <ReviewCard key={`a-${i}`} review={review} />
+          ))}
+          {/* Duplicate set for seamless loop */}
+          {reviews.map((review, i) => (
+            <ReviewCard key={`b-${i}`} review={review} />
+          ))}
+          {/* Third set for extra smoothness */}
+          {reviews.map((review, i) => (
+            <ReviewCard key={`c-${i}`} review={review} />
+          ))}
+          {/* Fourth set */}
+          {reviews.map((review, i) => (
+            <ReviewCard key={`d-${i}`} review={review} />
           ))}
         </div>
       </div>

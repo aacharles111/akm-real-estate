@@ -62,7 +62,7 @@ function AnimatedStat({
   );
 }
 
-export default function AboutAKM() {
+export default function AboutAKC() {
   return (
     <section id="about" className="py-20 md:py-28 bg-bg-light">
       <div className="max-w-7xl mx-auto px-6">
@@ -74,7 +74,7 @@ export default function AboutAKM() {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-text-dark">
-            About AKM Real Estate
+            About AKC Real Estate
           </h2>
         </motion.div>
 
@@ -87,7 +87,7 @@ export default function AboutAKM() {
           >
             <p className="text-lg text-text-body leading-relaxed">
               With over 7 years of excellence in Chennai&apos;s real estate
-              market, AKM Real Estate has established itself as a trusted name
+              market, AKC Real Estate has established itself as a trusted name
               in plotted development. From Tambaram to New Manli, we have
               multiple projects spanning Chennai&apos;s most promising
               corridors. Whether you&apos;re looking for a plot near schools,

@@ -13,25 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "AKM Real Estate | Plots in Chennai",
+  title: "AKC Real Estate | Plots in Chennai",
   description:
-    "CMDA-approved plots at best rates. AKM Real Estate offers prime residential and investment plots in Chennai's most promising locations.",
-  keywords: [
-    "plots in Chennai",
-    "CMDA approved plots",
-    "real estate Chennai",
-    "AKM Real Estate",
-    "residential plots",
-    "investment plots",
-    "Tambaram plots",
-    "Chennai property",
-  ],
-  openGraph: {
-    title: "AKM Real Estate | Plots in Chennai",
-    description:
-      "CMDA-approved plots at best rates. Prime locations, clear titles, secure investment.",
-    type: "website",
-  },
+    "AKC Real Estate offers CMDA-approved plots at best rates in Chennai. Prime locations, secure investments, and trusted service since 2017.",
 };
 
 export default function RootLayout({
@@ -44,7 +28,9 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col bg-white text-gray-900">
+        {children}
+      </body>
     </html>
   );
 }

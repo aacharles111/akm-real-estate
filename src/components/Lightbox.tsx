@@ -2,9 +2,14 @@
 
 import { useEffect, useCallback } from "react";
 
+interface GalleryImage {
+  src: string;
+  alt: string;
+}
+
 interface LightboxProps {
-  images: { seed: string; alt: string }[];
-  currentIndex: number;
+  images: GalleryImage[];
+  current: number;
   onClose: () => void;
   onNext: () => void;
   onPrev: () => void;
@@ -12,7 +17,7 @@ interface LightboxProps {
 
 export default function Lightbox({
   images,
-  currentIndex,
+  current,
   onClose,
   onNext,
   onPrev,
@@ -35,7 +40,7 @@ export default function Lightbox({
     };
   }, [handleKeyDown]);
 
-  const current = images[currentIndex];
+  const img = images[current];
 
   return (
     <div
@@ -58,15 +63,12 @@ export default function Lightbox({
 
       {/* Counter */}
       <div className="absolute top-4 left-4 text-white text-sm font-medium bg-black/30 px-3 py-1.5 rounded-full">
-        {currentIndex + 1} / {images.length}
+        {current + 1} / {images.length}
       </div>
 
       {/* Previous button */}
       <button
-        onClick={(e) => {
-          e.stopPropagation();
-          onPrev();
-        }}
+        onClick={(e) => { e.stopPropagation(); onPrev(); }}
         className="absolute left-4 z-50 w-12 h-12 flex items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20 transition-colors"
         aria-label="Previous image"
       >
@@ -77,10 +79,7 @@ export default function Lightbox({
 
       {/* Next button */}
       <button
-        onClick={(e) => {
-          e.stopPropagation();
-          onNext();
-        }}
+        onClick={(e) => { e.stopPropagation(); onNext(); }}
         className="absolute right-4 z-50 w-12 h-12 flex items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20 transition-colors"
         aria-label="Next image"
       >
@@ -95,15 +94,15 @@ export default function Lightbox({
         onClick={(e) => e.stopPropagation()}
       >
         <img
-          src={`https://picsum.photos/seed/${current.seed}/1200/900`}
-          alt={current.alt}
+          src={img.src}
+          alt={img.alt}
           className="max-w-full max-h-[85vh] object-contain rounded-lg shadow-2xl"
         />
       </div>
 
       {/* Caption */}
       <div className="absolute bottom-6 left-1/2 -translate-x-1/2 text-white text-sm bg-black/40 px-4 py-2 rounded-full">
-        {current.alt}
+        {img.alt}
       </div>
     </div>
   );

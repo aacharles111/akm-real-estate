@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { FaWhatsapp } from "react-icons/fa";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -29,18 +30,6 @@ export default function CTABanner() {
           },
         }
       );
-
-      // Subtle parallax on the background
-      gsap.to(sectionRef.current, {
-        backgroundPositionY: "20%",
-        ease: "none",
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: "top bottom",
-          end: "bottom top",
-          scrub: true,
-        },
-      });
     });
     return () => mm.revert();
   }, []);
@@ -50,7 +39,7 @@ export default function CTABanner() {
       ref={sectionRef}
       className="relative py-24 md:py-32 bg-gradient-to-r from-green-700 via-green-600 to-green-800 overflow-hidden"
     >
-      {/* Background pattern */}
+      {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10" aria-hidden="true">
         <div
           className="absolute inset-0"
@@ -62,6 +51,10 @@ export default function CTABanner() {
         />
       </div>
 
+      {/* Floating decorative circles */}
+      <div className="absolute top-10 left-10 w-32 h-32 bg-white/5 rounded-full blur-3xl" />
+      <div className="absolute bottom-10 right-10 w-48 h-48 bg-white/5 rounded-full blur-3xl" />
+
       <div
         ref={contentRef}
         className="relative z-10 max-w-4xl mx-auto px-6 text-center"
@@ -69,36 +62,30 @@ export default function CTABanner() {
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
           Your Dream Plot is Just a Call Away
         </h2>
-        <p className="mt-4 text-lg md:text-xl text-green-100 max-w-2xl mx-auto">
-          Don&apos;t wait. Premium plots are selling fast. Secure yours today.
+        <p className="mt-6 text-lg md:text-xl text-green-100 max-w-2xl mx-auto">
+          Don&apos;t wait. Premium CMDA-approved plots are selling fast. Secure
+          yours today with AKC Real Estate.
         </p>
-        <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+        <div className="mt-10">
           <a
-            href="tel:+919876543210"
-            className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-primary-mid bg-white rounded-full hover:bg-green-50 transition-colors duration-300 shadow-lg shadow-green-900/30"
+            href="https://wa.me/919876543210"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 bg-white text-green-700 hover:text-green-800 font-semibold px-8 py-4 rounded-full text-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 group"
           >
-            <svg
-              className="w-5 h-5 mr-2"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              strokeWidth={2}
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
-              />
-            </svg>
-            +91 98765 43210
-          </a>
-          <a
-            href="#contact"
-            className="inline-flex items-center justify-center px-8 py-4 text-lg font-semibold text-white border-2 border-white rounded-full hover:bg-white/10 transition-colors duration-300"
-          >
-            Contact Us
+            <FaWhatsapp className="w-6 h-6 text-green-500 group-hover:scale-110 transition-transform" />
+            Contact Us on WhatsApp
           </a>
         </div>
+        <p className="mt-6 text-green-200 text-sm">
+          Or call us directly at{" "}
+          <a
+            href="tel:+919876543210"
+            className="underline hover:text-white transition-colors"
+          >
+            +91 98765 43210
+          </a>
+        </p>
       </div>
     </section>
   );

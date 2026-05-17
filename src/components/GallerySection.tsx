@@ -8,21 +8,54 @@ import Lightbox from "./Lightbox";
 gsap.registerPlugin(ScrollTrigger);
 
 const images = [
-  { seed: "plot1", alt: "CMDA approved plot in Chennai" },
-  { seed: "plot2", alt: "Residential plot near Tambaram" },
-  { seed: "plot3", alt: "Investment plot in New Manli" },
-  { seed: "plot4", alt: "Prime location plot in Medavakkam" },
-  { seed: "plot5", alt: "Plot near IT corridor Chennai" },
-  { seed: "plot6", alt: "Residential plot in Chromepet" },
-  { seed: "plot7", alt: "Plot in Pallavaram area" },
-  { seed: "plot8", alt: "OMR corridor plot" },
-  { seed: "plot9", alt: "Plot with clear title in Chennai" },
-  { seed: "plot10", alt: "Affordable plot in Tambaram West" },
-  { seed: "plot11", alt: "Premium plot Chennai suburbs" },
-  { seed: "plot12", alt: "Gated community plot" },
-  { seed: "plot13", alt: "Corner plot near main road" },
-  { seed: "plot14", alt: "Plot near upcoming metro" },
-  { seed: "plot15", alt: "Investment land Chennai" },
+  {
+    src: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800&q=80",
+    alt: "Green plot in Chennai",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&q=80",
+    alt: "Modern luxury house plot",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1449844908441-8829872d2607?w=800&q=80",
+    alt: "Residential plot area",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=80",
+    alt: "Modern home exterior",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1510627489930-0c1b0bfb6785?w=800&q=80",
+    alt: "Green plot land",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1434082032745-a1590c00b1e2?w=800&q=80",
+    alt: "Aerial drone shot of land",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1572120360610-d971b9d7767c?w=800&q=80",
+    alt: "Aerial view of plots",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1592595896616-c37162298647?w=800&q=80",
+    alt: "Green land for sale",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
+    alt: "Luxury estate plot",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80",
+    alt: "Modern residential plot",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80",
+    alt: "Premium plot land",
+  },
+  {
+    src: "https://images.unsplash.com/photo-1600585153490-76fb20a32601?w=800&q=80",
+    alt: "Estate development plot",
+  },
 ];
 
 export default function GallerySection() {
@@ -61,11 +94,11 @@ export default function GallerySection() {
             y: 0,
             duration: 0.6,
             stagger: 0.08,
-            ease: "power2.out",
+            ease: "power3.out",
             scrollTrigger: {
               trigger: gridRef.current,
               start: "top 85%",
-              end: "bottom 20%",
+              end: "bottom 15%",
               toggleActions: "play none none none",
             },
           }
@@ -77,15 +110,19 @@ export default function GallerySection() {
 
   return (
     <>
-      <section ref={sectionRef} id="gallery" className="py-20 md:py-28 bg-bg-light">
+      <section
+        ref={sectionRef}
+        id="gallery"
+        className="py-20 md:py-28 bg-white"
+      >
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-text-dark">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
               Explore the Plot
             </h2>
-            <p className="mt-4 text-lg text-text-body max-w-2xl mx-auto">
-              Browse through our premium plot locations across Chennai&apos;s
-              most promising corridors.
+            <p className="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+              Take a visual tour of our premium CMDA-approved plots in prime
+              Chennai locations
             </p>
           </div>
 
@@ -93,38 +130,23 @@ export default function GallerySection() {
             ref={gridRef}
             className="columns-1 sm:columns-2 lg:columns-3 gap-4 space-y-4"
           >
-            {images.map((img, index) => (
+            {images.map((img, i) => (
               <div
-                key={img.seed}
-                className="gallery-item break-inside-avoid cursor-pointer group relative overflow-hidden rounded-2xl shadow-md border border-green-100 bg-white"
-                onClick={() => openLightbox(index)}
-                role="button"
-                tabIndex={0}
-                onKeyDown={(e) => {
-                  if (e.key === "Enter" || e.key === " ") openLightbox(index);
-                }}
-                aria-label={`View ${img.alt}`}
+                key={i}
+                className="gallery-item break-inside-avoid cursor-pointer group relative overflow-hidden rounded-2xl"
+                onClick={() => openLightbox(i)}
               >
                 <img
-                  src={`https://picsum.photos/seed/${img.seed}/800/600`}
+                  src={img.src}
                   alt={img.alt}
-                  className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
-                  loading="lazy"
+                  className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-110"
+                  loading={i < 6 ? "eager" : "lazy"}
                 />
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
-                  <svg
-                    className="w-12 h-12 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={1.5}
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6"
-                    />
-                  </svg>
+                {/* Hover overlay */}
+                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/40 transition-all duration-300 flex items-center justify-center">
+                  <span className="text-white text-lg font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300 translate-y-2 group-hover:translate-y-0">
+                    View
+                  </span>
                 </div>
               </div>
             ))}
@@ -135,10 +157,10 @@ export default function GallerySection() {
       {lightboxOpen && (
         <Lightbox
           images={images}
-          currentIndex={lightboxIndex}
+          current={lightboxIndex}
           onClose={closeLightbox}
-          onNext={nextImage}
           onPrev={prevImage}
+          onNext={nextImage}
         />
       )}
     </>

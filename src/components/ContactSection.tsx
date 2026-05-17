@@ -79,10 +79,10 @@ export default function ContactSection() {
                 <div>
                   <h3 className="font-semibold text-text-dark">Email</h3>
                   <a
-                    href="mailto:info@akmrealestate.com"
+                    href="mailto:info@akcrealestate.com"
                     className="text-primary-mid hover:text-cta-hover transition-colors"
                   >
-                    info@akmrealestate.com
+                    info@akcrealestate.com
                   </a>
                 </div>
               </div>
@@ -106,7 +106,7 @@ export default function ContactSection() {
             {/* Google Maps iframe */}
             <div className="mt-8 rounded-2xl overflow-hidden shadow-lg border border-green-100">
               <iframe
-                title="AKM Real Estate Location"
+                title="AKC Real Estate Location"
                 src="https://maps.google.com/maps?q=12.9249,80.1000&z=14&output=embed"
                 width="100%"
                 height="300"

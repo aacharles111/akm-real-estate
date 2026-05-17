@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <h3 className="text-2xl font-bold">AKM Real Estate</h3>
+            <h3 className="text-2xl font-bold">AKC Real Estate</h3>
             <p className="mt-4 text-green-200 leading-relaxed max-w-md">
               Your trusted partner for CMDA-approved plots in Chennai. Over 7
               years of excellence, 1,500+ plots sold, and 1,000+ happy
@@ -112,7 +112,7 @@ export default function Footer() {
           </div>
 
           <p className="text-green-300 text-sm">
-            &copy; {currentYear} AKM Real Estate. All rights reserved.
+            &copy; {currentYear} AKC Real Estate. All rights reserved.
           </p>
         </div>
       </div>

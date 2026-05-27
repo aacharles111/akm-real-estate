@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   authors: [{ name: "AKC Realestate" }],
   creator: "AKC Realestate",
   publisher: "AKC Realestate",
-  metadataBase: new URL("https://akm-real-estate.vercel.app"),
+  metadataBase: new URL("https://akcestates.vercel.app"),
   alternates: {
     canonical: "/",
   },
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
     title: "AKC Realestate | CMDA-Approved Plots in Chennai",
     description:
       "CMDA & DTCP approved residential plots in Chennai's prime locations. Trusted since 2017. 1,500+ plots sold. Site visits available.",
-    url: "https://akm-real-estate.vercel.app",
+    url: "https://akcestates.vercel.app",
     locale: "en_IN",
     images: [
       {

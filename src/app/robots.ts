@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: "/api/",
     },
-    sitemap: "https://akm-real-estate.vercel.app/sitemap.xml",
+    sitemap: "https://akcestates.vercel.app/sitemap.xml",
   };
 }

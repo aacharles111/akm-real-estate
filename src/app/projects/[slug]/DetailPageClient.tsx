@@ -34,7 +34,7 @@ export default function DetailPageClient({
     manufacturer: {
       "@type": "RealEstateAgent",
       name: "AKC Realestate",
-      url: "https://akm-real-estate.vercel.app",
+      url: "https://akcestates.vercel.app",
     },
     additionalProperty: [
       { "@type": "PropertyValue", name: "Plot Sizes", value: project.plotSizes },

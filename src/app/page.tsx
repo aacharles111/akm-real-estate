@@ -14,7 +14,7 @@ export default function Home() {
     name: "AKC Realestate",
     description:
       "AKC Realestate offers CMDA-approved residential plots at the best rates in Chennai. Trusted since 2017 with 1,500+ plots sold across Tambaram, Ponneri, Minjur, Medavakkam and more.",
-    url: "https://akm-real-estate.vercel.app",
+    url: "https://akcestates.vercel.app",
     telephone: "+919941318518",
     email: "kalaanitus@gmail.com",
     address: {

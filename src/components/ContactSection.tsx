@@ -122,7 +122,7 @@ export default function ContactSection() {
                 <div>
                   <h4 className="font-bold text-green-950 text-base">Headquarters</h4>
                   <p className="text-gray-600 mt-1 leading-relaxed">
-                    123, Main Road, Tambaram, Chennai - 600045
+                    No:4032, PA Avenue, Redhills Road, Kolathur, Chennai, 600099
                   </p>
                 </div>
               </div>
@@ -131,7 +131,7 @@ export default function ContactSection() {
             {/* Google Map iframe */}
             <div className="mt-8 rounded-3xl overflow-hidden shadow-lg border border-green-50/50 flex-1 min-h-[300px] relative">
               <iframe
-                title="AKC Realestate Tambaram Office"
+                title="AKC Realestate Kolathur Office"
                 src="https://maps.google.com/maps?q=12.9249,80.1000&z=14&output=embed"
                 width="100%"
                 height="100%"

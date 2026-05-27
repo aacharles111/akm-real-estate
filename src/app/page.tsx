@@ -19,10 +19,10 @@ export default function Home() {
     email: "kalaanitas@gmail.com",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "123, Main Road, Tambaram",
+      streetAddress: "No:4032, PA Avenue, Redhills Road, Kolathur",
       addressLocality: "Chennai",
       addressRegion: "Tamil Nadu",
-      postalCode: "600045",
+      postalCode: "600099",
       addressCountry: "IN",
     },
     geo: {

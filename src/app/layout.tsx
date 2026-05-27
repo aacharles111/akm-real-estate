@@ -87,6 +87,9 @@ export const metadata: Metadata = {
   classification: "Business",
   verification: {
     google: "XaIQ84vAuRcnp_B1SSvuQ2iQHQ6ycNug9x4ac_q_PM0",
+    other: {
+      "msvalidate.01": "BE4BDF61FAED268F8472FE9A2FC4ACC3",
+    },
   },
 };
 

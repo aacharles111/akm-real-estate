@@ -107,12 +107,12 @@ export default function Navbar() {
               AKC
             </span>
             <span
-              className={`hidden sm:block w-1.5 h-1.5 rounded-full transition-colors duration-200 ${
+              className={`w-1 h-1 sm:w-1.5 sm:h-1.5 rounded-full transition-colors duration-200 flex-shrink-0 ${
                 scrolled ? "bg-green-500" : "bg-green-400 drop-shadow-[0_1px_3px_rgba(0,0,0,0.5)]"
               }`}
             />
             <span
-              className={`hidden sm:block text-lg font-light tracking-[0.15em] transition-colors duration-200 ${
+              className={`text-xs sm:text-lg font-light tracking-[0.15em] transition-colors duration-200 ${
                 scrolled ? "text-green-700" : "text-white/90 drop-shadow-[0_1px_3px_rgba(0,0,0,0.5)]"
               }`}
             >

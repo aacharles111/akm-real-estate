@@ -86,8 +86,7 @@ export const metadata: Metadata = {
   category: "Real Estate",
   classification: "Business",
   verification: {
-    google: "google-site-verification-code",
-    yandex: "yandex-verification-code",
+    google: "XaIQ84vAuRcnp_B1SSvuQ2iQHQ6ycNug9x4ac_q_PM0",
   },
 };
 

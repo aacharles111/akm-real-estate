@@ -105,11 +105,11 @@ export default function ContactSection() {
                 <div>
                   <h4 className="font-bold text-green-950 text-base">Email Address</h4>
                   <a
-                    href="mailto:kalaanitus@gmail.com"
+                    href="mailto:kalaanitas@gmail.com"
                     className="text-green-700 hover:text-green-500 font-medium transition-colors mt-1 block focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-500 rounded"
-                    aria-label="Email AKC Realestate at kalaanitus@gmail.com"
+                    aria-label="Email AKC Realestate at kalaanitas@gmail.com"
                   >
-                    kalaanitus@gmail.com
+                    kalaanitas@gmail.com
                   </a>
                 </div>
               </div>

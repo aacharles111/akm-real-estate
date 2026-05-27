@@ -181,7 +181,7 @@ export default function HeroSection() {
             }}
             className="inline-flex items-center gap-2 border border-white/30 hover:border-white text-white font-medium px-8 py-4 rounded-full text-lg bg-white/5 hover:bg-white/10 backdrop-blur-sm transition-all duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-400"
           >
-            View Rates
+            Get In Touch
           </a>
         </div>
       </div>

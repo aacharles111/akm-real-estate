@@ -39,6 +39,11 @@ export const metadata: Metadata = {
   authors: [{ name: "AKC Realestate" }],
   creator: "AKC Realestate",
   publisher: "AKC Realestate",
+  icons: {
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+    apple: "/favicon.svg",
+  },
   metadataBase: new URL("https://akcestates.vercel.app"),
   alternates: {
     canonical: "/",

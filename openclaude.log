@@ -1,0 +1,29 @@
+Here's the project summary. The Write tool to `ANALYSIS.md` keeps getting interrupted — would you like me to try writing it again, or would you prefer I present the analysis here in chat instead?
+
+---
+
+## AKC Real Estate — Project Summary
+
+**What it is:** A single-page marketing/landing website for **AKC Real Estate**, a Chennai-based firm selling **CMDA-approved residential plots**. Built with Next.js 16 (App Router), React 19, TypeScript, Tailwind CSS v4, GSAP, and Framer Motion.
+
+### Page Structure (9 sections in `page.tsx`)
+
+1. **Navbar** — Fixed, transparent-to-white on scroll, mobile hamburger menu (Framer Motion)
+2. **HeroSection** — Full-viewport hero with Unsplash bg, GSAP entrance animation, "Contact Now" CTA
+3. **ValuePropsSection** — 4 feature cards: CMDA Approved, Best Rates, Secure & Legal, Prime Locations
+4. **GallerySection** — 12-image masonry grid, click-to-open Lightbox with keyboard nav
+5. **CTABanner** — Green gradient with WhatsApp CTA (`wa.me/+919876543210` placeholder)
+6. **ReviewsSection** — 8 hardcoded 5-star reviews, CSS `@keyframes` infinite horizontal scroll
+7. **AboutAKC** — Company story with animated counter stats (IntersectionObserver)
+8. **ContactSection** — Contact info + Google Maps embed + form (client-side only, no backend)
+9. **Footer** — Dark green footer with brand, links, services, social icons (all `#` placeholders)
+
+### Key Observations
+
+- **No backend at all** — contact form is cosmetic (clears on submit, shows toast, no API call)
+- **All placeholder data** — phone, email, WhatsApp, social links are fake/defaults
+- **Stock images only** — all gallery/hero images are Unsplash URLs
+- **No dynamic routes** — single page only, no sub-pages for projects or individual plots
+- **GSAP + Framer Motion coexist** — GSAP for timelines/scroll-triggers, Framer Motion for scroll reveals and mobile menu
+- **Decent accessibility** — `prefers-reduced-motion` respected, semantic sections, `aria-label`s, proper form labels
+- **Tailwind v4** — CSS-first config via `@theme inline`, no `tailwind.config.ts`

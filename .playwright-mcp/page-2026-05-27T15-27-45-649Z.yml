@@ -1,0 +1,271 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e4]:
+      - link "AKC" [ref=e5] [cursor=pointer]:
+        - /url: "#home"
+        - generic [ref=e6]: AKC
+      - button "Toggle menu" [ref=e7]:
+        - img [ref=e8]
+  - generic [ref=e10]:
+    - generic [ref=e12]:
+      - heading "Our Projects" [level=1] [ref=e13]
+      - paragraph [ref=e15]: Explore our portfolio of CMDA and DTCP approved residential plotted developments across Chennai's most promising corridors.
+    - generic [ref=e16]:
+      - generic [ref=e17]:
+        - generic [ref=e18]:
+          - img [ref=e19]
+          - textbox "Search properties..." [ref=e21]
+        - combobox [ref=e22] [cursor=pointer]:
+          - option "All Types" [selected]
+          - option "Residential Plots"
+          - option "Multi-Phase Development"
+          - option "Township"
+          - option "Beach Resort Plots"
+      - heading "5 Properties Found" [level=2] [ref=e24]
+    - generic [ref=e26]:
+      - generic [ref=e27]:
+        - generic [ref=e28]:
+          - img "Sree Vaaragi Residency – BI City, Minjur" [ref=e29]
+          - generic [ref=e30]: ACTIVE
+        - generic [ref=e31]:
+          - heading "Sree Vaaragi Residency – BI City, Minjur" [level=3] [ref=e32]
+          - generic [ref=e33]:
+            - generic [ref=e34]:
+              - paragraph [ref=e35]: Plot Sizes
+              - paragraph [ref=e36]: 406 – 1907 sq.ft.
+            - generic [ref=e37]:
+              - paragraph [ref=e38]: Scale
+              - paragraph [ref=e39]: 179 Residential Units
+            - generic [ref=e40]:
+              - paragraph [ref=e41]: Approval
+              - paragraph [ref=e42]: DTCP Approved Layout
+            - generic [ref=e43]:
+              - paragraph [ref=e44]: Status
+              - paragraph [ref=e45]: Ready for Construction
+          - generic [ref=e46]:
+            - generic [ref=e47]: Gated Community
+            - generic [ref=e48]: Concrete Roads
+            - generic [ref=e49]: Street Lights
+            - generic [ref=e50]: Bore Water
+          - generic [ref=e51]:
+            - generic [ref=e52]:
+              - img [ref=e53]
+              - text: "Created: 12/23/2025"
+            - link "Google Maps" [ref=e56] [cursor=pointer]:
+              - /url: https://maps.google.com/?q=Minjur+Chennai
+              - img [ref=e57]
+              - text: Google Maps
+          - generic [ref=e59]:
+            - link "Details" [ref=e60] [cursor=pointer]:
+              - /url: /projects/sree-vaaragi-residency-bi-city-minjur
+            - link "Contact" [ref=e61] [cursor=pointer]:
+              - /url: https://wa.me/919941318518
+              - img [ref=e62]
+              - text: Contact
+      - generic [ref=e64]:
+        - generic [ref=e65]:
+          - img "Loketha Lakshmi Nagar – Phase I & Phase II, Ponneri" [ref=e66]
+          - generic [ref=e67]: ACTIVE
+        - generic [ref=e68]:
+          - heading "Loketha Lakshmi Nagar – Phase I & Phase II, Ponneri" [level=3] [ref=e69]
+          - generic [ref=e70]:
+            - generic [ref=e71]:
+              - paragraph [ref=e72]: Plot Sizes
+              - paragraph [ref=e73]: 564 – 2076 sq.ft.
+            - generic [ref=e74]:
+              - paragraph [ref=e75]: Scale
+              - paragraph [ref=e76]: 83 Residential Units
+            - generic [ref=e77]:
+              - paragraph [ref=e78]: Approval
+              - paragraph [ref=e79]: RERA & CMDA Approved
+            - generic [ref=e80]:
+              - paragraph [ref=e81]: Status
+              - paragraph [ref=e82]: Developed Layout • Infrastructure Ready
+          - generic [ref=e83]:
+            - generic [ref=e84]: Gated Community
+            - generic [ref=e85]: Blacktop Roads
+            - generic [ref=e86]: Street Lights
+            - generic [ref=e87]: Bore Water
+          - generic [ref=e88]:
+            - generic [ref=e89]:
+              - img [ref=e90]
+              - text: "Created: 12/23/2025"
+            - link "Google Maps" [ref=e93] [cursor=pointer]:
+              - /url: https://maps.google.com/?q=Ponneri+Chennai
+              - img [ref=e94]
+              - text: Google Maps
+          - generic [ref=e96]:
+            - link "Details" [ref=e97] [cursor=pointer]:
+              - /url: /projects/loketha-lakshmi-nagar-ponneri
+            - link "Contact" [ref=e98] [cursor=pointer]:
+              - /url: https://wa.me/919941318518
+              - img [ref=e99]
+              - text: Contact
+      - generic [ref=e101]:
+        - generic [ref=e102]:
+          - img "Srii Balaji Avenue – Tiruvallur BI CITY" [ref=e103]
+          - generic [ref=e104]: ACTIVE
+        - generic [ref=e105]:
+          - heading "Srii Balaji Avenue – Tiruvallur BI CITY" [level=3] [ref=e106]
+          - generic [ref=e107]:
+            - generic [ref=e108]:
+              - paragraph [ref=e109]: Plot Sizes
+              - paragraph [ref=e110]: Approx. 800 – 2,300+ sq.ft.
+            - generic [ref=e111]:
+              - paragraph [ref=e112]: Scale
+              - paragraph [ref=e113]: Multi-Phase Development
+            - generic [ref=e114]:
+              - paragraph [ref=e115]: Approval
+              - paragraph [ref=e116]: DTCP Approved Layout
+            - generic [ref=e117]:
+              - paragraph [ref=e118]: Status
+              - paragraph [ref=e119]: Immediate Possession Available
+          - generic [ref=e120]:
+            - generic [ref=e121]: Fully Compounded Gated Community
+            - generic [ref=e122]: Black Top Internal Roads (30 ft & 24 ft)
+            - generic [ref=e123]: 40 ft Main Access Road
+            - generic [ref=e124]: Solar LED Street Lights
+          - generic [ref=e125]:
+            - generic [ref=e126]:
+              - img [ref=e127]
+              - text: "Created: 12/30/2025"
+            - link "Google Maps" [ref=e130] [cursor=pointer]:
+              - /url: https://maps.google.com/?q=Tiruvallur+Chennai
+              - img [ref=e131]
+              - text: Google Maps
+          - generic [ref=e133]:
+            - link "Details" [ref=e134] [cursor=pointer]:
+              - /url: /projects/srii-balaji-avenue-tiruvallur-bi-city
+            - link "Contact" [ref=e135] [cursor=pointer]:
+              - /url: https://wa.me/919941318518
+              - img [ref=e136]
+              - text: Contact
+      - generic [ref=e138]:
+        - generic [ref=e139]:
+          - img "SrieVaare Aishwariyam Township" [ref=e140]
+          - generic [ref=e141]: ACTIVE
+        - generic [ref=e142]:
+          - heading "SrieVaare Aishwariyam Township" [level=3] [ref=e143]
+          - generic [ref=e144]:
+            - generic [ref=e145]:
+              - paragraph [ref=e146]: Plot Sizes
+              - paragraph [ref=e147]: 526 – 2860 sq.ft.
+            - generic [ref=e148]:
+              - paragraph [ref=e149]: Scale
+              - paragraph [ref=e150]: 260 Premium Units
+            - generic [ref=e151]:
+              - paragraph [ref=e152]: Approval
+              - paragraph [ref=e153]: CMDA & RERA Approved
+            - generic [ref=e154]:
+              - paragraph [ref=e155]: Status
+              - paragraph [ref=e156]: Immediate Possession Available
+          - generic [ref=e157]:
+            - generic [ref=e158]: Gated Community
+            - generic [ref=e159]: Blacktop Roads
+            - generic [ref=e160]: Street Lighting
+            - generic [ref=e161]: CCTV Surveillance
+          - generic [ref=e162]:
+            - generic [ref=e163]:
+              - img [ref=e164]
+              - text: "Created: 12/17/2025"
+            - link "Google Maps" [ref=e167] [cursor=pointer]:
+              - /url: https://maps.google.com/?q=Chennai
+              - img [ref=e168]
+              - text: Google Maps
+          - generic [ref=e170]:
+            - link "Details" [ref=e171] [cursor=pointer]:
+              - /url: /projects/srievaare-aishwariyam-township
+            - link "Contact" [ref=e172] [cursor=pointer]:
+              - /url: https://wa.me/919941318518
+              - img [ref=e173]
+              - text: Contact
+      - generic [ref=e175]:
+        - generic [ref=e176]:
+          - img "BI City Beach Resort Plots – Ponneri" [ref=e177]
+          - generic [ref=e178]: ACTIVE
+        - generic [ref=e179]:
+          - heading "BI City Beach Resort Plots – Ponneri" [level=3] [ref=e180]
+          - generic [ref=e181]:
+            - generic [ref=e182]:
+              - paragraph [ref=e183]: Plot Sizes
+              - paragraph [ref=e184]: Multiple Plot Sizes Available
+            - generic [ref=e185]:
+              - paragraph [ref=e186]: Scale
+              - paragraph
+            - generic [ref=e187]:
+              - paragraph [ref=e188]: Approval
+              - paragraph [ref=e189]: Clear Title • Demarcated Plots
+            - generic [ref=e190]:
+              - paragraph [ref=e191]: Status
+              - paragraph [ref=e192]: Ready for Future Development
+          - generic [ref=e193]:
+            - generic [ref=e194]: Ready for Future Development
+            - generic [ref=e195]: Water Access
+            - generic [ref=e196]: Green Surroundings
+            - generic [ref=e197]: Clear Plot Demarcation
+          - generic [ref=e198]:
+            - generic [ref=e199]:
+              - img [ref=e200]
+              - text: "Created: 4/20/2026"
+            - link "Google Maps" [ref=e203] [cursor=pointer]:
+              - /url: https://maps.google.com/?q=Ponneri+Beach+Chennai
+              - img [ref=e204]
+              - text: Google Maps
+          - generic [ref=e206]:
+            - link "Details" [ref=e207] [cursor=pointer]:
+              - /url: /projects/bi-city-beach-resort-plots-ponneri
+            - link "Contact" [ref=e208] [cursor=pointer]:
+              - /url: https://wa.me/919941318518
+              - img [ref=e209]
+              - text: Contact
+    - contentinfo [ref=e211]:
+      - generic [ref=e213]:
+        - generic [ref=e214]:
+          - generic [ref=e215]:
+            - link "AKC Realestate" [ref=e216] [cursor=pointer]:
+              - /url: "#home"
+              - generic [ref=e217]: AKC
+              - generic [ref=e219]: Realestate
+            - paragraph [ref=e220]: Your trusted partner for CMDA-approved plots in Chennai. Over 7 years of excellence, 1,500+ plots sold, and 1,000+ happy families building their futures on solid ground.
+          - generic [ref=e221]:
+            - heading "Quick Links" [level=4] [ref=e222]
+            - list [ref=e223]:
+              - listitem [ref=e224]:
+                - link "Home" [ref=e225] [cursor=pointer]:
+                  - /url: "#home"
+              - listitem [ref=e226]:
+                - link "About" [ref=e227] [cursor=pointer]:
+                  - /url: "#about"
+              - listitem [ref=e228]:
+                - link "Projects" [ref=e229] [cursor=pointer]:
+                  - /url: /projects
+              - listitem [ref=e230]:
+                - link "Gallery" [ref=e231] [cursor=pointer]:
+                  - /url: "#gallery"
+              - listitem [ref=e232]:
+                - link "Reviews" [ref=e233] [cursor=pointer]:
+                  - /url: "#reviews"
+              - listitem [ref=e234]:
+                - link "Contact" [ref=e235] [cursor=pointer]:
+                  - /url: "#contact"
+          - generic [ref=e236]:
+            - heading "Our Services" [level=4] [ref=e237]
+            - list [ref=e238]:
+              - listitem [ref=e239]: Plot Sales
+              - listitem [ref=e240]: CMDA Approved Plots
+              - listitem [ref=e241]: Investment Advisory
+              - listitem [ref=e242]: Site Visits & Transport
+        - generic [ref=e243]:
+          - generic [ref=e244]:
+            - link "Facebook" [ref=e245] [cursor=pointer]:
+              - /url: https://facebook.com
+              - img [ref=e246]
+            - link "Twitter/X" [ref=e248] [cursor=pointer]:
+              - /url: https://x.com
+              - img [ref=e249]
+            - link "Instagram" [ref=e251] [cursor=pointer]:
+              - /url: https://instagram.com
+              - img [ref=e252]
+          - paragraph [ref=e254]: © 2026 AKC Realestate. All rights reserved.
+  - button "Open Next.js Dev Tools" [ref=e260] [cursor=pointer]:
+    - img [ref=e261]

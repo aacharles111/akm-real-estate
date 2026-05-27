@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
-  "lastScanned": 1778983132123,
-  "projectRoot": "C:\\Users\\Charles\\Desktop\\Projects\\Akm Real Estate\\akm-real-estate",
+  "lastScanned": 1779647221718,
+  "projectRoot": "C:\\Users\\Charles\\Desktop\\Projects\\AKC Real Estate\\akm-real-estate",
   "techStack": {
     "languages": [
       {
@@ -42,7 +42,7 @@
     "runtime": null
   },
   "build": {
-    "buildCommand": "cd \"C:/Users/Charles/Desktop/Projects/Akm Real Estate/akm-real-estate\" && npm run build 2>&1",
+    "buildCommand": "npm run build",
     "testCommand": null,
     "lintCommand": "npm run lint",
     "devCommand": "npm run dev",
@@ -74,7 +74,7 @@
       "path": "public",
       "purpose": "Public files",
       "fileCount": 5,
-      "lastAccessed": 1778983132098,
+      "lastAccessed": 1779647221688,
       "keyFiles": [
         "file.svg",
         "globe.svg",
@@ -87,14 +87,14 @@
       "path": "src",
       "purpose": "Source code",
       "fileCount": 0,
-      "lastAccessed": 1778983132098,
+      "lastAccessed": 1779647221695,
       "keyFiles": []
     },
     "src\\app": {
       "path": "src\\app",
       "purpose": "Application code",
       "fileCount": 4,
-      "lastAccessed": 1778983132105,
+      "lastAccessed": 1779647221696,
       "keyFiles": [
         "favicon.ico",
         "globals.css",
@@ -104,10 +104,10 @@
     "src\\components": {
       "path": "src\\components",
       "purpose": "UI components",
-      "fileCount": 9,
-      "lastAccessed": 1778983132106,
+      "fileCount": 10,
+      "lastAccessed": 1779647221697,
       "keyFiles": [
-        "AboutAKM.tsx",
+        "AboutAKC.tsx",
         "ContactSection.tsx",
         "CTABanner.tsx"
       ]
@@ -116,56 +116,92 @@
   "hotPaths": [
     {
       "path": "src\\components\\ContactSection.tsx",
+      "accessCount": 8,
+      "lastAccessed": 1779647610859,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\globals.css",
+      "accessCount": 7,
+      "lastAccessed": 1779647602862,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\layout.tsx",
+      "accessCount": 7,
+      "lastAccessed": 1779647602926,
+      "type": "file"
+    },
+    {
+      "path": "src\\app\\page.tsx",
+      "accessCount": 7,
+      "lastAccessed": 1779647602988,
+      "type": "file"
+    },
+    {
+      "path": "",
+      "accessCount": 7,
+      "lastAccessed": 1779647603174,
+      "type": "directory"
+    },
+    {
+      "path": "src\\components\\HeroSection.tsx",
+      "accessCount": 7,
+      "lastAccessed": 1779647610843,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\ReviewsSection.tsx",
+      "accessCount": 7,
+      "lastAccessed": 1779647610905,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\ValuePropsSection.tsx",
+      "accessCount": 7,
+      "lastAccessed": 1779647610951,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\Footer.tsx",
+      "accessCount": 7,
+      "lastAccessed": 1779647611028,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\GallerySection.tsx",
+      "accessCount": 6,
+      "lastAccessed": 1779647610669,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\Navbar.tsx",
+      "accessCount": 6,
+      "lastAccessed": 1779647610815,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\CTABanner.tsx",
+      "accessCount": 6,
+      "lastAccessed": 1779647610874,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\Lightbox.tsx",
       "accessCount": 5,
-      "lastAccessed": 1778984033183,
+      "lastAccessed": 1779647610775,
+      "type": "file"
+    },
+    {
+      "path": "src\\components\\AboutAKC.tsx",
+      "accessCount": 5,
+      "lastAccessed": 1779647610920,
       "type": "file"
     },
     {
       "path": "REBUILD_V2.md",
       "accessCount": 4,
       "lastAccessed": 1778983972710,
-      "type": "file"
-    },
-    {
-      "path": "src\\app\\layout.tsx",
-      "accessCount": 4,
-      "lastAccessed": 1778984021470,
-      "type": "file"
-    },
-    {
-      "path": "src\\app\\page.tsx",
-      "accessCount": 4,
-      "lastAccessed": 1778984021507,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\Footer.tsx",
-      "accessCount": 4,
-      "lastAccessed": 1778984033158,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\HeroSection.tsx",
-      "accessCount": 4,
-      "lastAccessed": 1778984033241,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\ReviewsSection.tsx",
-      "accessCount": 4,
-      "lastAccessed": 1778984046976,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\ValuePropsSection.tsx",
-      "accessCount": 4,
-      "lastAccessed": 1778984046992,
-      "type": "file"
-    },
-    {
-      "path": "src\\app\\globals.css",
-      "accessCount": 4,
-      "lastAccessed": 1778984156897,
       "type": "file"
     },
     {
@@ -176,33 +212,15 @@
     },
     {
       "path": "package.json",
-      "accessCount": 3,
-      "lastAccessed": 1778983972637,
+      "accessCount": 4,
+      "lastAccessed": 1779647614332,
       "type": "file"
     },
     {
-      "path": "src\\components\\CTABanner.tsx",
+      "path": "PROMPT.md",
       "accessCount": 3,
-      "lastAccessed": 1778984047009,
+      "lastAccessed": 1779647496781,
       "type": "file"
-    },
-    {
-      "path": "src\\components\\GallerySection.tsx",
-      "accessCount": 3,
-      "lastAccessed": 1778984077407,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\Navbar.tsx",
-      "accessCount": 3,
-      "lastAccessed": 1778984105667,
-      "type": "file"
-    },
-    {
-      "path": "",
-      "accessCount": 3,
-      "lastAccessed": 1778984173478,
-      "type": "directory"
     },
     {
       "path": "src\\components\\AboutAKM.tsx",
@@ -211,21 +229,9 @@
       "type": "file"
     },
     {
-      "path": "src\\components\\Lightbox.tsx",
-      "accessCount": 2,
-      "lastAccessed": 1778983607932,
-      "type": "file"
-    },
-    {
       "path": "S1_PROMPT.md",
       "accessCount": 2,
       "lastAccessed": 1778983972657,
-      "type": "file"
-    },
-    {
-      "path": "src\\components\\AboutAKC.tsx",
-      "accessCount": 2,
-      "lastAccessed": 1778984033223,
       "type": "file"
     },
     {
@@ -238,12 +244,6 @@
       "path": "AGENTS.md",
       "accessCount": 1,
       "lastAccessed": 1778983193978,
-      "type": "file"
-    },
-    {
-      "path": "PROMPT.md",
-      "accessCount": 1,
-      "lastAccessed": 1778983193990,
       "type": "file"
     },
     {

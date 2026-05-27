@@ -1,0 +1,474 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e4]:
+      - link "AKC" [ref=e5] [cursor=pointer]:
+        - /url: "#home"
+        - generic [ref=e6]: AKC
+      - button "Toggle menu" [ref=e7]:
+        - img [ref=e8]
+  - main [ref=e10]:
+    - generic [ref=e11]:
+      - generic [ref=e15]:
+        - heading "CMDA-Approved Plots for Your Dream Home" [level=1] [ref=e16]
+        - paragraph [ref=e17]: Build Your Future on Solid Ground in Chennai's Prime Locations.
+        - generic [ref=e18]:
+          - link "Contact Us on WhatsApp" [ref=e19] [cursor=pointer]:
+            - /url: https://wa.me/919941318518
+            - img [ref=e20]
+            - text: Contact Us on WhatsApp
+          - link "View Rates" [ref=e22] [cursor=pointer]:
+            - /url: "#contact"
+      - img [ref=e24] [cursor=pointer]
+    - generic [ref=e27]:
+      - generic [ref=e28]:
+        - heading "Why Choose AKC Realestate?" [level=2] [ref=e29]
+        - paragraph [ref=e31]: At AKC Realestate, we specialize in offering CMDA-approved plots at the most competitive rates in Chennai. Every plot we sell is legally vetted, properly maintained, and secured with clear titles — giving you complete peace of mind. Whether you are buying for your dream home or building long-term wealth, our plots are located in fast-appreciating corridors with excellent connectivity. With transparent transactions, zero hidden charges, and dedicated post-sale support, we ensure your journey to owning land is safe and rewarding. Secure your future on solid ground.
+      - generic [ref=e32]:
+        - generic [ref=e33]:
+          - img [ref=e35]
+          - heading "CMDA Approved" [level=3] [ref=e37]
+          - paragraph [ref=e38]: All our plots are CMDA-approved with clear documentation and legal clearance, ensuring a hassle-free purchase for your dream home.
+        - generic [ref=e39]:
+          - img [ref=e41]
+          - heading "Best Rates" [level=3] [ref=e43]
+          - paragraph [ref=e44]: Competitive pricing with flexible payment options. We offer the most value for your money in Chennai's real estate market.
+        - generic [ref=e45]:
+          - img [ref=e47]
+          - heading "Secure & Legal" [level=3] [ref=e49]
+          - paragraph [ref=e50]: Legally vetted plots with clear titles. Zero hidden charges and 100% transparent transactions for complete peace of mind.
+        - generic [ref=e51]:
+          - img [ref=e53]
+          - heading "Prime Locations" [level=3] [ref=e56]
+          - paragraph [ref=e57]: Well-connected areas close to IT hubs, schools, and hospitals. Build your home in Chennai's most promising neighborhoods.
+    - generic [ref=e59]:
+      - generic [ref=e60]:
+        - heading "Explore the Plots" [level=2] [ref=e61]
+        - paragraph [ref=e63]: Take a visual tour of our premium, ready-to-construct plots. View drone walkthroughs and actual site photographs of high-appreciating sectors.
+      - generic [ref=e64]:
+        - button "View Sree Vaaragi Residency – BI City, Minjur – DTCP Approved Plots" [ref=e65] [cursor=pointer]:
+          - img "Sree Vaaragi Residency – BI City, Minjur – DTCP Approved Plots" [ref=e66]
+          - generic [ref=e67]:
+            - generic [ref=e68]: Photograph
+            - heading "Sree Vaaragi Residency – BI City, Minjur – DTCP Approved Plots" [level=3] [ref=e69]
+        - button "View Loketha Lakshmi Nagar – RERA & CMDA Approved Plots Ponneri" [ref=e70] [cursor=pointer]:
+          - img "Loketha Lakshmi Nagar – RERA & CMDA Approved Plots Ponneri" [ref=e71]
+          - generic [ref=e72]:
+            - generic [ref=e73]: Photograph
+            - heading "Loketha Lakshmi Nagar – RERA & CMDA Approved Plots Ponneri" [level=3] [ref=e74]
+        - button "View Srii Balaji Avenue – DTCP Approved Layout Tiruvallur BI CITY" [ref=e75] [cursor=pointer]:
+          - img "Srii Balaji Avenue – DTCP Approved Layout Tiruvallur BI CITY" [ref=e76]
+          - generic [ref=e77]:
+            - generic [ref=e78]: Photograph
+            - heading "Srii Balaji Avenue – DTCP Approved Layout Tiruvallur BI CITY" [level=3] [ref=e79]
+        - button "View SrieVaare Aishwariyam Township – CMDA & RERA Approved" [ref=e80] [cursor=pointer]:
+          - img "SrieVaare Aishwariyam Township – CMDA & RERA Approved" [ref=e81]
+          - generic [ref=e82]:
+            - generic [ref=e83]: Photograph
+            - heading "SrieVaare Aishwariyam Township – CMDA & RERA Approved" [level=3] [ref=e84]
+        - button "View BI City Beach Resort Plots – Ponneri North Chennai" [ref=e85] [cursor=pointer]:
+          - img "BI City Beach Resort Plots – Ponneri North Chennai" [ref=e86]
+          - generic [ref=e87]:
+            - generic [ref=e88]: Photograph
+            - heading "BI City Beach Resort Plots – Ponneri North Chennai" [level=3] [ref=e89]
+        - button "View Sree Vaaragi Residency – Plot Layout and Site Development" [ref=e90] [cursor=pointer]:
+          - img "Sree Vaaragi Residency – Plot Layout and Site Development" [ref=e91]
+          - generic [ref=e92]:
+            - generic [ref=e93]: Photograph
+            - heading "Sree Vaaragi Residency – Plot Layout and Site Development" [level=3] [ref=e94]
+        - button "View Loketha Lakshmi Nagar – Gated Plot Community View" [ref=e95] [cursor=pointer]:
+          - img "Loketha Lakshmi Nagar – Gated Plot Community View" [ref=e96]
+          - generic [ref=e97]:
+            - generic [ref=e98]: Photograph
+            - heading "Loketha Lakshmi Nagar – Gated Plot Community View" [level=3] [ref=e99]
+        - button "View Srii Balaji Avenue – Wide Roads and Plot Demarcation" [ref=e100] [cursor=pointer]:
+          - img "Srii Balaji Avenue – Wide Roads and Plot Demarcation" [ref=e101]
+          - generic [ref=e102]:
+            - generic [ref=e103]: Photograph
+            - heading "Srii Balaji Avenue – Wide Roads and Plot Demarcation" [level=3] [ref=e104]
+        - button "View Aishwariyam Township – Premium Gated Layout" [ref=e105] [cursor=pointer]:
+          - img "Aishwariyam Township – Premium Gated Layout" [ref=e106]
+          - generic [ref=e107]:
+            - generic [ref=e108]: Photograph
+            - heading "Aishwariyam Township – Premium Gated Layout" [level=3] [ref=e109]
+        - button "View BI City Beach Resort Plots – Green Surroundings" [ref=e110] [cursor=pointer]:
+          - img "BI City Beach Resort Plots – Green Surroundings" [ref=e111]
+          - generic [ref=e112]:
+            - generic [ref=e113]: Photograph
+            - heading "BI City Beach Resort Plots – Green Surroundings" [level=3] [ref=e114]
+        - button "View Sree Vaaragi Residency – Site Walkthrough" [ref=e115] [cursor=pointer]:
+          - img "Sree Vaaragi Residency – Site Walkthrough" [ref=e116]
+          - generic:
+            - generic:
+              - img
+          - generic [ref=e117]:
+            - generic [ref=e118]: Video Tour
+            - heading "Sree Vaaragi Residency – Site Walkthrough" [level=3] [ref=e119]
+        - button "View Srii Balaji Avenue – Aerial Layout Perspective" [ref=e120] [cursor=pointer]:
+          - img "Srii Balaji Avenue – Aerial Layout Perspective" [ref=e121]
+          - generic:
+            - generic:
+              - img
+          - generic [ref=e122]:
+            - generic [ref=e123]: Video Tour
+            - heading "Srii Balaji Avenue – Aerial Layout Perspective" [level=3] [ref=e124]
+    - generic [ref=e128]:
+      - text: Immediate site visits available
+      - heading "Your Dream Plot is Just a Call Away" [level=2] [ref=e129]
+      - paragraph [ref=e130]: Don't wait. Premium CMDA-approved residential plots are selling fast. Secure your family's future with AKC Realestate today.
+      - generic [ref=e131]:
+        - link "Contact Us on WhatsApp" [ref=e132] [cursor=pointer]:
+          - /url: https://wa.me/919941318518
+          - img [ref=e133]
+          - text: Contact Us on WhatsApp
+        - link "Call +91 99413 18518" [ref=e135] [cursor=pointer]:
+          - /url: tel:+919941318518
+          - img [ref=e136]
+          - text: Call +91 99413 18518
+      - paragraph [ref=e138]: No broker fees • Clear titles guaranteed • Hassle-free registration
+    - generic [ref=e139]:
+      - generic [ref=e142]:
+        - heading "What Our Customers Say" [level=2] [ref=e143]
+        - paragraph [ref=e145]: Hear from families who built their homes and secured their investments on our plots.
+        - button "Pause review carousel" [ref=e146]:
+          - img [ref=e147]
+          - text: Pause
+      - generic [ref=e150]:
+        - generic [ref=e152]:
+          - generic [ref=e153]:
+            - img [ref=e154]
+            - img [ref=e156]
+            - img [ref=e158]
+            - img [ref=e160]
+            - img [ref=e162]
+          - paragraph [ref=e164]: “AKC Realestate made my plot purchase seamless. The documentation was crystal clear and the team guided me through every step. Highly recommended!”
+          - generic [ref=e165]:
+            - generic [ref=e166]:
+              - paragraph [ref=e167]: Rajesh Kumar
+              - paragraph [ref=e168]: Tambaram, Chennai
+            - generic [ref=e169]: Verified Buyer
+        - generic [ref=e171]:
+          - generic [ref=e172]:
+            - img [ref=e173]
+            - img [ref=e175]
+            - img [ref=e177]
+            - img [ref=e179]
+            - img [ref=e181]
+          - paragraph [ref=e183]: “I was worried about legal issues with plot buying, but AKC ensured everything was CMDA-approved. Got my dream plot at a great price.”
+          - generic [ref=e184]:
+            - generic [ref=e185]:
+              - paragraph [ref=e186]: Priya Mohan
+              - paragraph [ref=e187]: Medavakkam, Chennai
+            - generic [ref=e188]: Verified Buyer
+        - generic [ref=e190]:
+          - generic [ref=e191]:
+            - img [ref=e192]
+            - img [ref=e194]
+            - img [ref=e196]
+            - img [ref=e198]
+            - img [ref=e200]
+          - paragraph [ref=e202]: “Best real estate experience in Chennai. Transparent pricing, no hidden charges, and excellent post-sale support. Will buy again.”
+          - generic [ref=e203]:
+            - generic [ref=e204]:
+              - paragraph [ref=e205]: Suresh Raman
+              - paragraph [ref=e206]: Chromepet, Chennai
+            - generic [ref=e207]: Verified Buyer
+        - generic [ref=e209]:
+          - generic [ref=e210]:
+            - img [ref=e211]
+            - img [ref=e213]
+            - img [ref=e215]
+            - img [ref=e217]
+            - img [ref=e219]
+          - paragraph [ref=e221]: “We bought two plots from AKC and both transactions were smooth. The team knows Chennai's market inside out. True professionals.”
+          - generic [ref=e222]:
+            - generic [ref=e223]:
+              - paragraph [ref=e224]: Lakshmi Narayanan
+              - paragraph [ref=e225]: OMR, Chennai
+            - generic [ref=e226]: Verified Buyer
+        - generic [ref=e228]:
+          - generic [ref=e229]:
+            - img [ref=e230]
+            - img [ref=e232]
+            - img [ref=e234]
+            - img [ref=e236]
+            - img [ref=e238]
+          - paragraph [ref=e240]: “As a first-time buyer, I had many questions. AKC's team patiently answered everything. My plot has already appreciated 20% in value!”
+          - generic [ref=e241]:
+            - generic [ref=e242]:
+              - paragraph [ref=e243]: Karthik Subramanian
+              - paragraph [ref=e244]: Pallavaram, Chennai
+            - generic [ref=e245]: Verified Buyer
+        - generic [ref=e247]:
+          - generic [ref=e248]:
+            - img [ref=e249]
+            - img [ref=e251]
+            - img [ref=e253]
+            - img [ref=e255]
+            - img [ref=e257]
+          - paragraph [ref=e259]: “Excellent investment opportunity. The location recommendations were spot-on. Very happy with my purchase and the returns so far.”
+          - generic [ref=e260]:
+            - generic [ref=e261]:
+              - paragraph [ref=e262]: Deepa Venkat
+              - paragraph [ref=e263]: New Manli, Chennai
+            - generic [ref=e264]: Verified Buyer
+        - generic [ref=e266]:
+          - generic [ref=e267]:
+            - img [ref=e268]
+            - img [ref=e270]
+            - img [ref=e272]
+            - img [ref=e274]
+            - img [ref=e276]
+          - paragraph [ref=e278]: “Professional, honest, and reliable. What sets AKC apart is their commitment to customer satisfaction even after the sale is complete.”
+          - generic [ref=e279]:
+            - generic [ref=e280]:
+              - paragraph [ref=e281]: Anand Balaji
+              - paragraph [ref=e282]: Tambaram West, Chennai
+            - generic [ref=e283]: Verified Buyer
+        - generic [ref=e285]:
+          - generic [ref=e286]:
+            - img [ref=e287]
+            - img [ref=e289]
+            - img [ref=e291]
+            - img [ref=e293]
+            - img [ref=e295]
+          - paragraph [ref=e297]: “Great experience from site visit to registration. All promises were delivered. I've already recommended AKC to my family and friends.”
+          - generic [ref=e298]:
+            - generic [ref=e299]:
+              - paragraph [ref=e300]: Meera Jagannathan
+              - paragraph [ref=e301]: Velachery, Chennai
+            - generic [ref=e302]: Verified Buyer
+        - generic [ref=e304]:
+          - generic [ref=e305]:
+            - img [ref=e306]
+            - img [ref=e308]
+            - img [ref=e310]
+            - img [ref=e312]
+            - img [ref=e314]
+          - paragraph [ref=e316]: “AKC Realestate made my plot purchase seamless. The documentation was crystal clear and the team guided me through every step. Highly recommended!”
+          - generic [ref=e317]:
+            - generic [ref=e318]:
+              - paragraph [ref=e319]: Rajesh Kumar
+              - paragraph [ref=e320]: Tambaram, Chennai
+            - generic [ref=e321]: Verified Buyer
+        - generic [ref=e323]:
+          - generic [ref=e324]:
+            - img [ref=e325]
+            - img [ref=e327]
+            - img [ref=e329]
+            - img [ref=e331]
+            - img [ref=e333]
+          - paragraph [ref=e335]: “I was worried about legal issues with plot buying, but AKC ensured everything was CMDA-approved. Got my dream plot at a great price.”
+          - generic [ref=e336]:
+            - generic [ref=e337]:
+              - paragraph [ref=e338]: Priya Mohan
+              - paragraph [ref=e339]: Medavakkam, Chennai
+            - generic [ref=e340]: Verified Buyer
+        - generic [ref=e342]:
+          - generic [ref=e343]:
+            - img [ref=e344]
+            - img [ref=e346]
+            - img [ref=e348]
+            - img [ref=e350]
+            - img [ref=e352]
+          - paragraph [ref=e354]: “Best real estate experience in Chennai. Transparent pricing, no hidden charges, and excellent post-sale support. Will buy again.”
+          - generic [ref=e355]:
+            - generic [ref=e356]:
+              - paragraph [ref=e357]: Suresh Raman
+              - paragraph [ref=e358]: Chromepet, Chennai
+            - generic [ref=e359]: Verified Buyer
+        - generic [ref=e361]:
+          - generic [ref=e362]:
+            - img [ref=e363]
+            - img [ref=e365]
+            - img [ref=e367]
+            - img [ref=e369]
+            - img [ref=e371]
+          - paragraph [ref=e373]: “We bought two plots from AKC and both transactions were smooth. The team knows Chennai's market inside out. True professionals.”
+          - generic [ref=e374]:
+            - generic [ref=e375]:
+              - paragraph [ref=e376]: Lakshmi Narayanan
+              - paragraph [ref=e377]: OMR, Chennai
+            - generic [ref=e378]: Verified Buyer
+        - generic [ref=e380]:
+          - generic [ref=e381]:
+            - img [ref=e382]
+            - img [ref=e384]
+            - img [ref=e386]
+            - img [ref=e388]
+            - img [ref=e390]
+          - paragraph [ref=e392]: “As a first-time buyer, I had many questions. AKC's team patiently answered everything. My plot has already appreciated 20% in value!”
+          - generic [ref=e393]:
+            - generic [ref=e394]:
+              - paragraph [ref=e395]: Karthik Subramanian
+              - paragraph [ref=e396]: Pallavaram, Chennai
+            - generic [ref=e397]: Verified Buyer
+        - generic [ref=e399]:
+          - generic [ref=e400]:
+            - img [ref=e401]
+            - img [ref=e403]
+            - img [ref=e405]
+            - img [ref=e407]
+            - img [ref=e409]
+          - paragraph [ref=e411]: “Excellent investment opportunity. The location recommendations were spot-on. Very happy with my purchase and the returns so far.”
+          - generic [ref=e412]:
+            - generic [ref=e413]:
+              - paragraph [ref=e414]: Deepa Venkat
+              - paragraph [ref=e415]: New Manli, Chennai
+            - generic [ref=e416]: Verified Buyer
+        - generic [ref=e418]:
+          - generic [ref=e419]:
+            - img [ref=e420]
+            - img [ref=e422]
+            - img [ref=e424]
+            - img [ref=e426]
+            - img [ref=e428]
+          - paragraph [ref=e430]: “Professional, honest, and reliable. What sets AKC apart is their commitment to customer satisfaction even after the sale is complete.”
+          - generic [ref=e431]:
+            - generic [ref=e432]:
+              - paragraph [ref=e433]: Anand Balaji
+              - paragraph [ref=e434]: Tambaram West, Chennai
+            - generic [ref=e435]: Verified Buyer
+        - generic [ref=e437]:
+          - generic [ref=e438]:
+            - img [ref=e439]
+            - img [ref=e441]
+            - img [ref=e443]
+            - img [ref=e445]
+            - img [ref=e447]
+          - paragraph [ref=e449]: “Great experience from site visit to registration. All promises were delivered. I've already recommended AKC to my family and friends.”
+          - generic [ref=e450]:
+            - generic [ref=e451]:
+              - paragraph [ref=e452]: Meera Jagannathan
+              - paragraph [ref=e453]: Velachery, Chennai
+            - generic [ref=e454]: Verified Buyer
+    - generic [ref=e457]:
+      - heading "About AKC Realestate" [level=2] [ref=e459]
+      - generic [ref=e461]:
+        - generic [ref=e462]:
+          - heading "Creating Trusted Plotted Developments in Chennai Since 2017" [level=3] [ref=e463]
+          - paragraph [ref=e464]: With over 7 years of excellence in Chennai's real estate market, AKC Realestate has established itself as a trusted name in plotted development. From Tambaram to New Manli, we have multiple projects spanning Chennai's most promising corridors. Whether you're looking for a plot near schools, IT hubs, or upcoming infrastructure projects — we have options in every prime location.
+          - paragraph [ref=e465]: Our commitment to quality, transparency, and customer satisfaction has made us the preferred choice for over 1,000+ happy families. Every plot we sell comes with complete legal documentation, CMDA approvals, and post-sale support that continues long after registration.
+        - generic [ref=e466]:
+          - generic [ref=e468]:
+            - generic [ref=e469]: 0+
+            - generic [ref=e470]: Years Experience
+          - generic [ref=e472]:
+            - generic [ref=e473]: 0+
+            - generic [ref=e474]: Plots Sold
+          - generic [ref=e476]:
+            - generic [ref=e477]: 0+
+            - generic [ref=e478]: Happy Customers
+          - generic [ref=e480]:
+            - generic [ref=e481]: 0+
+            - generic [ref=e482]: Ongoing Projects
+      - generic [ref=e483]:
+        - paragraph [ref=e484]: Locations Served
+        - generic [ref=e485]:
+          - generic [ref=e487]: Tambaram
+          - generic [ref=e489]: New Manli
+          - generic [ref=e491]: Medavakkam
+          - generic [ref=e493]: Chromepet
+          - generic [ref=e495]: Pallavaram
+          - generic [ref=e497]: OMR
+    - generic [ref=e500]:
+      - generic [ref=e501]:
+        - heading "Get In Touch" [level=2] [ref=e502]
+        - paragraph [ref=e504]: Ready to secure your CMDA-approved plot? Build your future home on Chennai's solid ground. Reach out to us today.
+      - generic [ref=e505]:
+        - generic [ref=e506]:
+          - generic [ref=e507]:
+            - heading "Our Office Location" [level=3] [ref=e508]
+            - generic [ref=e509]:
+              - img [ref=e511]
+              - generic [ref=e513]:
+                - heading "Phone Number" [level=4] [ref=e514]
+                - link "Call AKC Realestate at +91 99413 18518" [ref=e515] [cursor=pointer]:
+                  - /url: tel:+919941318518
+                  - text: +91 99413 18518
+            - generic [ref=e516]:
+              - img [ref=e518]
+              - generic [ref=e521]:
+                - heading "Email Address" [level=4] [ref=e522]
+                - link "Email AKC Realestate at kalaanitus@gmail.com" [ref=e523] [cursor=pointer]:
+                  - /url: mailto:kalaanitus@gmail.com
+                  - text: kalaanitus@gmail.com
+            - generic [ref=e524]:
+              - img [ref=e526]
+              - generic [ref=e529]:
+                - heading "Headquarters" [level=4] [ref=e530]
+                - paragraph [ref=e531]: 123, Main Road, Tambaram, Chennai - 600045
+          - iframe [ref=e533]:
+            
+        - generic [ref=e535]:
+          - generic [ref=e536]:
+            - heading "Send us a Message" [level=3] [ref=e537]
+            - generic [ref=e538]:
+              - generic [ref=e539]:
+                - generic [ref=e540]: Your Name
+                - textbox "Your Name" [ref=e541]:
+                  - /placeholder: e.g. Adithya Verma
+              - generic [ref=e542]:
+                - generic [ref=e543]: Phone Number
+                - textbox "Phone Number" [ref=e544]:
+                  - /placeholder: e.g. +91 99413 18518
+              - generic [ref=e545]:
+                - generic [ref=e546]: Email Address
+                - textbox "Email Address" [ref=e547]:
+                  - /placeholder: e.g. adithya@example.com
+              - generic [ref=e548]:
+                - generic [ref=e549]: Requirements
+                - textbox "Requirements" [ref=e550]:
+                  - /placeholder: Describe what kind of plot sizes, budget or location you are interested in...
+          - button "Send Message" [ref=e552] [cursor=pointer]:
+            - img [ref=e553]
+            - text: Send Message
+    - generic [ref=e558]:
+      - generic [ref=e559]:
+        - generic [ref=e560]:
+          - link "AKC Realestate" [ref=e561] [cursor=pointer]:
+            - /url: "#home"
+            - generic [ref=e562]: AKC
+            - generic [ref=e564]: Realestate
+          - paragraph [ref=e565]: Your trusted partner for CMDA-approved plots in Chennai. Over 7 years of excellence, 1,500+ plots sold, and 1,000+ happy families building their futures on solid ground.
+        - generic [ref=e566]:
+          - heading "Quick Links" [level=4] [ref=e567]
+          - list [ref=e568]:
+            - listitem [ref=e569]:
+              - link "Home" [ref=e570] [cursor=pointer]:
+                - /url: "#home"
+            - listitem [ref=e571]:
+              - link "About" [ref=e572] [cursor=pointer]:
+                - /url: "#about"
+            - listitem [ref=e573]:
+              - link "Projects" [ref=e574] [cursor=pointer]:
+                - /url: /projects
+            - listitem [ref=e575]:
+              - link "Gallery" [ref=e576] [cursor=pointer]:
+                - /url: "#gallery"
+            - listitem [ref=e577]:
+              - link "Reviews" [ref=e578] [cursor=pointer]:
+                - /url: "#reviews"
+            - listitem [ref=e579]:
+              - link "Contact" [ref=e580] [cursor=pointer]:
+                - /url: "#contact"
+        - generic [ref=e581]:
+          - heading "Our Services" [level=4] [ref=e582]
+          - list [ref=e583]:
+            - listitem [ref=e584]: Plot Sales
+            - listitem [ref=e585]: CMDA Approved Plots
+            - listitem [ref=e586]: Investment Advisory
+            - listitem [ref=e587]: Site Visits & Transport
+      - generic [ref=e588]:
+        - generic [ref=e589]:
+          - link "Facebook" [ref=e590] [cursor=pointer]:
+            - /url: https://facebook.com
+            - img [ref=e591]
+          - link "Twitter/X" [ref=e593] [cursor=pointer]:
+            - /url: https://x.com
+            - img [ref=e594]
+          - link "Instagram" [ref=e596] [cursor=pointer]:
+            - /url: https://instagram.com
+            - img [ref=e597]
+        - paragraph [ref=e599]: © 2026 AKC Realestate. All rights reserved.
+  - button "Open Next.js Dev Tools" [ref=e605] [cursor=pointer]:
+    - img [ref=e606]

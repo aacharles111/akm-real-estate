@@ -1,0 +1,135 @@
+- generic [ref=e3]:
+  - generic [ref=e1099]:
+    - banner [ref=e1100]:
+      - generic [ref=e1102]:
+        - link "Company Logo" [ref=e1103] [cursor=pointer]:
+          - /url: /
+          - img "Company Logo" [ref=e1104]
+        - navigation [ref=e1105]:
+          - link "Home" [ref=e1106] [cursor=pointer]:
+            - /url: /
+            - img [ref=e1107]
+            - generic [ref=e1110]: Home
+          - link "About Us" [ref=e1111] [cursor=pointer]:
+            - /url: /about-us
+            - img [ref=e1112]
+            - generic [ref=e1114]: About Us
+          - button "Properties" [ref=e1116] [cursor=pointer]:
+            - img [ref=e1117]
+            - generic [ref=e1120]: Properties
+            - img [ref=e1121]
+          - link "Gallery" [ref=e1123] [cursor=pointer]:
+            - /url: /gallary
+            - img [ref=e1124]
+            - generic [ref=e1128]: Gallery
+          - link "Contact Us" [ref=e1129] [cursor=pointer]:
+            - /url: /contact-us
+            - img [ref=e1130]
+            - generic [ref=e1132]: Contact Us
+    - generic [ref=e1133]:
+      - generic [ref=e1136]:
+        - generic [ref=e1137]:
+          - img [ref=e1138]
+          - generic [ref=e1141]: Search properties
+          - textbox "Search properties" [ref=e1142]:
+            - /placeholder: Search properties...
+        - generic [ref=e1143]:
+          - button "Clear search" [ref=e1144] [cursor=pointer]: Clear
+          - button "Run search" [ref=e1145] [cursor=pointer]: Search
+      - generic [ref=e1146]:
+        - generic [ref=e1147]:
+          - generic [ref=e1148]:
+            - combobox [ref=e1150]:
+              - option "Property Type" [selected]
+              - option "All Types"
+            - button "Clear Filters" [ref=e1151] [cursor=pointer]:
+              - img [ref=e1152]
+              - text: Clear Filters
+          - generic [ref=e1156]:
+            - button [ref=e1157] [cursor=pointer]:
+              - img [ref=e1158]
+            - button [ref=e1160] [cursor=pointer]:
+              - img [ref=e1161]
+        - generic [ref=e1162]:
+          - generic [ref=e1165]:
+            - heading "0 Properties Found" [level=1] [ref=e1166]
+            - paragraph
+          - paragraph [ref=e1171]: Searching properties...
+  - contentinfo [ref=e1172]:
+    - img
+    - img
+    - generic [ref=e1173]:
+      - generic [ref=e1174]:
+        - generic [ref=e1175]:
+          - img "Srie Vaare Estates Logo" [ref=e1177]
+          - paragraph [ref=e1178]: The world's most sophisticated real estate platform, combining cutting-edge technology with personalized luxury service.
+          - generic [ref=e1179]:
+            - link "Facebook" [ref=e1180] [cursor=pointer]:
+              - /url: https://www.facebook.com/people/Srie-Vaare-Estates/61586339631258/
+              - img [ref=e1181]
+            - link "Twitter" [ref=e1183] [cursor=pointer]:
+              - /url: https://x.com/Srie_vaare_
+              - img [ref=e1184]
+            - link "Instagram" [ref=e1186] [cursor=pointer]:
+              - /url: https://www.instagram.com/srie__vaare_estates/
+              - img [ref=e1187]
+            - link "LinkedIn" [ref=e1190] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/srie-vaare-estates/
+              - img [ref=e1191]
+            - link "Youtube" [ref=e1195] [cursor=pointer]:
+              - /url: https://www.youtube.com/@srievaareestates
+              - img [ref=e1196]
+        - generic [ref=e1199]:
+          - heading "Quick Links" [level=3] [ref=e1200]
+          - list [ref=e1201]:
+            - listitem [ref=e1202]:
+              - link "Home" [ref=e1203] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=e1204]:
+              - link "About Us" [ref=e1205] [cursor=pointer]:
+                - /url: /about-us
+            - listitem [ref=e1206]:
+              - link "Contact Us" [ref=e1207] [cursor=pointer]:
+                - /url: /contact-us
+            - listitem [ref=e1208]:
+              - link "Testimonials" [ref=e1209] [cursor=pointer]:
+                - /url: /customer-testimonial
+        - generic [ref=e1210]:
+          - heading "Properties" [level=3] [ref=e1211]
+          - list [ref=e1212]:
+            - listitem [ref=e1213]:
+              - link "On-going Projects" [ref=e1214] [cursor=pointer]:
+                - /url: /search-results
+            - listitem [ref=e1215]:
+              - link "Completed Projects" [ref=e1216] [cursor=pointer]:
+                - /url: /completed-projects
+        - generic [ref=e1217]:
+          - heading "Contact Us" [level=3] [ref=e1218]
+          - generic [ref=e1219]:
+            - link "srievaareestates2019@gmail.com" [ref=e1220] [cursor=pointer]:
+              - /url: mailto:srievaareestates2019@gmail.com
+              - img [ref=e1221]
+              - generic [ref=e1224]: srievaareestates2019@gmail.com
+            - link "No.6, Vivekananda Street, Ranga Garden, Kolathur, Chennai - 600 099. (Near Senthil Nagar Bus Stop)" [ref=e1225] [cursor=pointer]:
+              - /url: https://www.google.com/maps/search/?api=1&query=No.6,+Vivekananda+Street,+Ranga+Garden,+Kolathur,+Chennai+600099
+              - img [ref=e1226]
+              - generic [ref=e1229]: No.6, Vivekananda Street, Ranga Garden, Kolathur, Chennai - 600 099. (Near Senthil Nagar Bus Stop)
+            - link "+91 90032 88122" [ref=e1230] [cursor=pointer]:
+              - /url: tel:+919884323262
+              - img [ref=e1231]
+              - generic [ref=e1233]: +91 90032 88122
+      - generic [ref=e1234]:
+        - generic [ref=e1235]: © 2026 Srievaare Estates. All rights reserved.
+        - generic [ref=e1236]:
+          - link "Privacy Policy" [ref=e1237] [cursor=pointer]:
+            - /url: /privacy-policy
+          - link "Terms of Service" [ref=e1238] [cursor=pointer]:
+            - /url: /terms-conditions
+          - link "Cookie Policy" [ref=e1239] [cursor=pointer]:
+            - /url: /cookie-policy
+      - link "Designed by Social Collage" [ref=e1241] [cursor=pointer]:
+        - /url: https://socialcollage.in/
+        - generic [ref=e1242]: Designed by
+        - generic [ref=e1243]: Social Collage
+  - generic:
+    - img

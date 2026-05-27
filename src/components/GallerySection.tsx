@@ -9,7 +9,7 @@ import Lightbox from "./Lightbox";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const mediaItems = [
+const mediaItems: { src: string; alt: string; isVideo?: boolean; videoUrl?: string }[] = [
   {
     src: "https://social-collage.s3.ap-south-1.amazonaws.com/properties/1766728639600-pwcjtl.jpeg",
     alt: "Sree Vaaragi Residency – BI City, Minjur – DTCP Approved Plots",
@@ -52,15 +52,11 @@ const mediaItems = [
   },
   {
     src: "https://social-collage.s3.amazonaws.com/properties/1766458648716-2t5nq9.jpeg",
-    alt: "Sree Vaaragi Residency – Site Walkthrough",
-    isVideo: true,
-    videoUrl: "https://assets.mixkit.co/videos/preview/mixkit-drone-view-of-a-dense-green-forest-42308-large.mp4",
+    alt: "Sree Vaaragi Residency – Site Walkthrough View",
   },
   {
     src: "https://social-collage.s3.amazonaws.com/properties/1767080689275-rvzf1a.jpeg",
     alt: "Srii Balaji Avenue – Aerial Layout Perspective",
-    isVideo: true,
-    videoUrl: "https://assets.mixkit.co/videos/preview/mixkit-camera-panning-upward-on-a-modern-white-house-41584-large.mp4",
   },
 ];
 

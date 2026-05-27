@@ -120,8 +120,8 @@ export default function HeroSection() {
           loop
           muted
           playsInline
-          poster="https://social-collage.s3.ap-south-1.amazonaws.com/properties/1766728639600-pwcjtl.jpeg"
           className="absolute inset-0 w-full h-full object-cover"
+          preload="auto"
         >
           <source src="/hero-bg.mp4" type="video/mp4" />
         </video>

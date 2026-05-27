@@ -1,10 +1,13 @@
 "use client";
 
 import { useEffect, useCallback } from "react";
+import { HiXMark, HiChevronLeft, HiChevronRight } from "react-icons/hi2";
 
 interface GalleryImage {
   src: string;
   alt: string;
+  isVideo?: boolean;
+  videoUrl?: string;
 }
 
 interface LightboxProps {
@@ -40,69 +43,104 @@ export default function Lightbox({
     };
   }, [handleKeyDown]);
 
-  const img = images[current];
+  const item = images[current];
 
   return (
     <div
-      className="fixed inset-0 z-50 bg-black/95 flex items-center justify-center"
+      className="fixed inset-0 z-50 bg-black/95 backdrop-blur-md flex items-center justify-center"
       onClick={onClose}
       role="dialog"
       aria-modal="true"
-      aria-label="Image lightbox"
+      aria-label="Media Lightbox"
     >
-      {/* Close button */}
-      <button
-        onClick={onClose}
-        className="absolute top-4 right-4 z-50 w-12 h-12 flex items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20 transition-colors"
-        aria-label="Close lightbox"
-      >
-        <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-          <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-        </svg>
-      </button>
-
-      {/* Counter */}
-      <div className="absolute top-4 left-4 text-white text-sm font-medium bg-black/30 px-3 py-1.5 rounded-full">
-        {current + 1} / {images.length}
+      {/* Top Bar (Close and Count) */}
+      <div className="absolute top-0 left-0 right-0 p-6 flex justify-between items-center z-50 bg-gradient-to-b from-black/50 to-transparent">
+        <div className="text-white/80 text-sm font-semibold tracking-wider bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/10">
+          {current + 1} / {images.length}
+        </div>
+        <button
+          onClick={onClose}
+          className="w-12 h-12 flex items-center justify-center rounded-full bg-white/10 text-white hover:bg-green-600 hover:scale-105 transition-all duration-200 border border-white/10 shadow-lg focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-400"
+          aria-label="Close Lightbox"
+        >
+          <HiXMark size={24} />
+        </button>
       </div>
 
-      {/* Previous button */}
+      {/* Navigation Buttons (Floating desktop) */}
       <button
-        onClick={(e) => { e.stopPropagation(); onPrev(); }}
-        className="absolute left-4 z-50 w-12 h-12 flex items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20 transition-colors"
-        aria-label="Previous image"
+        onClick={(e) => {
+          e.stopPropagation();
+          onPrev();
+        }}
+        className="absolute left-6 z-50 w-14 h-14 hidden md:flex items-center justify-center rounded-full bg-white/10 text-white hover:bg-green-600 hover:scale-105 transition-all duration-200 border border-white/10 shadow-xl focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-400"
+        aria-label="Previous Media"
       >
-        <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-          <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
-        </svg>
+        <HiChevronLeft size={28} />
       </button>
 
-      {/* Next button */}
       <button
-        onClick={(e) => { e.stopPropagation(); onNext(); }}
-        className="absolute right-4 z-50 w-12 h-12 flex items-center justify-center rounded-full bg-white/10 text-white hover:bg-white/20 transition-colors"
-        aria-label="Next image"
+        onClick={(e) => {
+          e.stopPropagation();
+          onNext();
+        }}
+        className="absolute right-6 z-50 w-14 h-14 hidden md:flex items-center justify-center rounded-full bg-white/10 text-white hover:bg-green-600 hover:scale-105 transition-all duration-200 border border-white/10 shadow-xl focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-400"
+        aria-label="Next Media"
       >
-        <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-          <path strokeLinecap="round" strokeLinejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
-        </svg>
+        <HiChevronRight size={28} />
       </button>
 
-      {/* Image */}
+      {/* Content Area */}
       <div
-        className="max-w-[90vw] max-h-[85vh] flex items-center justify-center"
+        className="max-w-[92vw] max-h-[80vh] flex items-center justify-center relative z-10"
         onClick={(e) => e.stopPropagation()}
       >
-        <img
-          src={img.src}
-          alt={img.alt}
-          className="max-w-full max-h-[85vh] object-contain rounded-lg shadow-2xl"
-        />
+        {item.isVideo && item.videoUrl ? (
+          <video
+            src={item.videoUrl}
+            controls
+            autoPlay
+            loop
+            playsInline
+            className="max-w-full max-h-[80vh] rounded-2xl shadow-2xl border border-white/10 bg-black"
+          />
+        ) : (
+          <img
+            src={item.src}
+            alt={item.alt}
+            className="max-w-full max-h-[80vh] object-contain rounded-2xl shadow-2xl border border-white/10"
+          />
+        )}
       </div>
 
-      {/* Caption */}
-      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 text-white text-sm bg-black/40 px-4 py-2 rounded-full">
-        {img.alt}
+      {/* Bottom Bar Caption */}
+      <div className="absolute bottom-0 left-0 right-0 p-8 flex flex-col items-center z-50 bg-gradient-to-t from-black/60 to-transparent pointer-events-none">
+        <p className="text-white text-base md:text-lg font-medium tracking-wide text-center max-w-2xl bg-black/30 backdrop-blur-md px-6 py-3 rounded-full border border-white/5 pointer-events-auto">
+          {item.alt}
+        </p>
+        
+        {/* Mobile-only Swipe/Tap helper */}
+        <div className="flex md:hidden items-center gap-6 mt-4 pointer-events-auto">
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              onPrev();
+            }}
+            className="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 text-white hover:bg-green-600 transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-400 rounded-full"
+          >
+            <HiChevronLeft size={20} />
+          </button>
+          <span className="text-white/60 text-xs tracking-widest uppercase">Swipe / Tap</span>
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              onNext();
+            }}
+            className="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 text-white hover:bg-green-600 transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-green-400 rounded-full"
+          >
+            <HiChevronRight size={20} />
+          </button>
+        </div>
       </div>
     </div>
   );

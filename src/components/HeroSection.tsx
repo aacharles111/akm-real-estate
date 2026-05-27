@@ -63,19 +63,7 @@ export default function HeroSection() {
           "-=0.5"
         );
 
-      // Parallax scroll on BG image
-      gsap.to(".hero-bg-img", {
-        yPercent: 20,
-        ease: "none",
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: "top top",
-          end: "bottom top",
-          scrub: true,
-        },
-      });
-
-      // Subtle scale-up parallax on the content container
+      // Scale-up parallax on the content container
       gsap.to(".hero-content", {
         yPercent: -10,
         opacity: 0.3,
@@ -125,17 +113,20 @@ export default function HeroSection() {
         style={{ left: 0, top: 0 }}
       />
 
-      {/* Parallax Background Image Container */}
+      {/* Video Background */}
       <div className="absolute inset-0 overflow-hidden">
-        <div
-          className="hero-bg-img absolute -top-[10%] left-0 w-full h-[120%] bg-cover bg-center bg-no-repeat opacity-95"
-          style={{
-            backgroundImage:
-              "url(https://social-collage.s3.ap-south-1.amazonaws.com/properties/1766728639600-pwcjtl.jpeg)",
-          }}
-        />
-        {/* Dark radial overlay gradient for premium high contrast layout */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/75 via-black/55 to-black/85" />
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          poster="https://social-collage.s3.ap-south-1.amazonaws.com/properties/1766728639600-pwcjtl.jpeg"
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src="/hero-bg.mp4" type="video/mp4" />
+        </video>
+        {/* Dark overlay gradient for high contrast text readability */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/75 via-black/50 to-black/85" />
       </div>
 
       {/* Subtle static blur ambient spots */}
